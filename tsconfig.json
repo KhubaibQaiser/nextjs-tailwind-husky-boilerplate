@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "es5",
+    "lib": ["es6", "dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "paths": {
+      "@components/*": ["app/components/*"],
+      "@icons": ["app/components/icons/"],
+      "@screens/*": ["app/screens/*"],
+      "@constants": ["app/constants"],
+      "@utils": ["app/utils"],
+      "@usecases": ["domain/cms/usecases"],
+      "@hooks": ["app/hooks/"],
+      "@cms": ["data/services/cms/"],
+      "@cms/*": ["data/services/cms/*"],
+      "@public": ["./public"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", ".eslintrc.js"]
+}
